@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	int n, contador;
+
+	do
+	{
+		cout << "ingrese un numero: "; cin >> n;
+		if (n != 0) {
+			contador++;
+		}
+	} while (n > 0);
+		cout << "numeros mayores: " << contador << endl;
+	return 0;
+}
