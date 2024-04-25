@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int temperatura, tempmedia, tempalta = 0, tempbaja = 100, hora = 4;
+
+	do
+	{
+		std::cout << "hora: " << hora << " ingrese la temperatura: "; std::cin >> temperatura;
+		hora += 4;
+
+		if(temperatura < tempbaja) {
+			tempbaja = temperatura;
+		}
+		else if(temperatura > tempalta) {
+			tempalta = temperatura;
+		}
+
+		tempmedia = temperatura/6;
+
+	} while (hora <= 24);
+		std::cout << "la temeperatura baja es: " << tempbaja << std::endl;
+		std::cout << "la temperatura alta es: " << tempalta << std::endl;
+		std::cout << "la temperatura media es: " << tempmedia << std::endl;
+	return 0;
+}
