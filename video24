@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int resultado = 1, x, y;
+
+	std::cout << "introduzca un numero: "; std::cin >> x;
+	std::cout << "introduzca un segundo numero: "; std::cin >> y;
+
+	for (int i = 1; i < y; ++i)
+	{
+		resultado = resultado * x;
+	}
+
+	std::cout << "el resultado es: " << resultado << std::endl;
+	return 0;
+}
